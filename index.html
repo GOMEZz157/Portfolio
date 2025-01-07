@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Nicollas Gomes</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Nicollas Gomes</h1>
+            <p>Desenvolvedor Front-End Júnior</p>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Sou Nicollas Gomes, um desenvolvedor front-end júnior apaixonado por criar interfaces bonitas e funcionais. Tenho experiência em HTML, CSS, e JavaScript e estou sempre em busca de novos desafios para expandir minhas habilidades.</p>
+            </div>
+        </section>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2>Meus Projetos</h2>
+                <div class="project-list">
+                    <div class="project">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" target="_blank">Ver Projeto</a>
+                    </div>
+                    <div class="project">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" target="_blank">Ver Projeto</a>
+                    </div>
+                    <div class="project">
+                        <h3>Projeto 3</h3>
+                        <p>Descrição breve do projeto.</p>
+                        <a href="#" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato comigo para discutir oportunidades ou apenas dizer oi!</p>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Nicollas Gomes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
