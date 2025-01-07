@@ -1,5 +1,5 @@
 /* Reset básico */
-body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -71,6 +71,7 @@ body {
     color: #CCCCCC;
 }
 
+
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -107,40 +108,6 @@ body {
     color: #FFFFFF;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-#contact-form label {
-    font-weight: bold;
-    color: #00FF88;
-}
-
-#contact-form input, #contact-form textarea {
-    padding: 10px;
-    background-color: #1E1E1E;
-    border: 1px solid #00FF88;
-    border-radius: 5px;
-    color: #FFFFFF;
-}
-
-#contact-form button {
-    padding: 10px 20px;
-    background-color: #00FF88;
-    border: none;
-    border-radius: 5px;
-    color: #121212;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#contact-form button:hover {
-    background-color: #00CC66;
-}
 
 .footer {
     background-color: #1E1E1E;
@@ -150,7 +117,72 @@ body {
     border-top: 2px solid #00FF88;
 }
 
+
 .footer p {
     color: #CCCCCC;
     font-size: 0.9em;
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: #1E1E1E;
+    padding: 50px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#contato h2 {
+    font-size: 2.5em;
+    color: #00FF88;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    font-size: 1.2em;
+    color: #CCCCCC;
+    margin-bottom: 30px;
+}
+
+#contato .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#contato .icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+#contato .icons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00FF88;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#contato .icons :hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+#contato h1 {
+    font-size: 1.5em;
+    color: #00FF88;
+    margin: 20px 0;
+}
+
+/* Container de Contato */
+.container-con {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
